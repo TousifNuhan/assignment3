@@ -20,6 +20,17 @@
         .text-manrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        .container-height {
+            height: 34rem;
+        }
+
+        .radial{
+            transform: rotate(140deg);
+        }
+        .radial-text{
+            transform: rotate(-140deg);
+        }
     </style>
 </head>
 
@@ -59,7 +70,7 @@
                 </div>
                 <div class="navbar-end">
                     <div>
-                        <i class="fa-solid fa-magnifying-glass mr-7"></i>
+                        <i class="fa-solid fa-magnifying-glass lg:mr-5 md:mr-4 sm:mr-2"></i>
                     </div>
                     <a class="btn bg-[#FF4240] text-[#FFF] text-lg">Get Ticket</a>
                 </div>
@@ -69,12 +80,12 @@
     </header>
 
     <main>
-        <section>
+        <section class=" lg:my-10 ">
             <!-- Banner section -->
 
-         <div class=" relative container mx-auto rounded-4xl ">
-           
-                <div class="carousel w-full h-96 ">
+            <div class=" relative container mx-auto rounded-4xl ">
+
+                <div class="carousel w-full container-height ">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="Images/1.png" class="w-full" />
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -93,20 +104,83 @@
                 </div>
             </div>
 
-       
-            <div class=" container mx-auto sm:w-1/2 font-normal lg:absolute rounded-2xl text-center lg:top-60 lg:left-2/4 bg-[#131318]  p-5 lg:w-2/5">
+            <div
+                class=" container mx-auto sm:w-1/2 font-normal lg:absolute rounded-2xl text-center lg:top-96 lg:left-2/4 bg-[#131318]  p-5 lg:w-2/6">
 
                 <h3 class="m-3 font-extrabold text-2xl text-[#FFF]">Meet all the heroes from the field</h3>
-                <p class="text-[#ffffff99]">Welcome to our club.This is one of the best club.You can explore more about our club.</p>
+                <p class="text-[#ffffff99]">Welcome to our club.This is one of the best club.You can explore more about
+                    our club.</p>
 
             </div>
-        
-       
-            
-
         </section>
 
+        <!-- Professional hockey club -->
+        <section class="container mx-auto sm:mt-10">
+            <div class=" container mx-auto font-normal rounded-2xl text-center p-5 ">
 
+                <h3 class="m-3 font-extrabold text-3xl text-[#131318] sm:mb-5">Professional Hockeys Club</h3>
+                <div class="flex justify-center">
+                    <p class="text-[#424247] font-semibold lg:w-3/4 sm:w-auto">In 1933 the club has started the journey.We have 35+ experienced
+                        instructors.The club has a great history.We are here to reach you to your destination.Keep your faith on us.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-x-1 lg:mt-14 ">
+                <!-- 1 -->
+                <div class="card bg-base-100 shadow-xl border-8">
+                    <div class="flex justify-center">
+                        <div class="radial-progress text-[#FF4240] radial	" style="--value:87 ;" role="progressbar "> <span class="text-[#131318] text-xl font-extrabold radial-text">87%</span></div>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Player Facility</h2>
+                        <p class="text-[#424247]">We give our players unlimited free drinks after every match.</p>
+                        
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card bg-base-100 shadow-xl border-8">
+                    <div class="flex justify-center">
+                        <div class="radial-progress text-[#49D293] radial" style="--value:95;" role="progressbar"><span class="text-[#131318] text-xl font-extrabold radial-text">95%</span></div>
+
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Experienced Coach</h2>
+                        <p class="text-[#424247]">Before joining here he worked in 8 different clubs and won 9 titles.</p>
+                        
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card bg-base-100 shadow-xl border-8">
+                    <div class="flex justify-center">
+                        <div class="radial-progress text-amber-500 radial" style="--value:90;" role="progressbar"><span class="text-[#131318] text-xl font-extrabold radial-text">90%</span></div>
+
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Senior Player</h2>
+                        <p class="text-[#424247]">There are 40+ senior players in our club,who can help the youngers to grow-up in the best possible way.</p>
+                        
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="card bg-base-100 shadow-xl border-8">
+                    <div class="flex justify-center">
+                        <div class="radial-progress text-[#4C8DF1] radial" style="--value:80;" role="progressbar"><span class="text-[#131318] text-xl font-extrabold radial-text">80%</span></div>
+
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Training Ground</h2>
+                        <p class="text-[#424247]">We have 2 playing grounds and there are many types of bar.</p>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
 
     </main>
 
